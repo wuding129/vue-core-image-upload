@@ -15,8 +15,6 @@ module.exports = {
     'dist/lib/xhr': './lib/xhr.js',
     'dist/lib/loading-gif': './lib/loading-gif.js',
     'dist/props': './props',
-    'dist/props': './props',
-
   },
   output: {
     path: path.resolve(__dirname),
