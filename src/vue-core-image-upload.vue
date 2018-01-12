@@ -117,7 +117,7 @@
           return;
         }
 
-        if (!this.isXhr && this.compress && (this.files[0]['type'] === 'image/jpg' || this.files[0]['type'] === 'image/jpeg')) {
+        if (!this.isXhr && this.compress && this.files[0]['type'] !== 'image/png' && this.files[0]['type'] !== 'image/gif') {
           canvasHelper.compress(this.files[0], 100 - this.compress, (code) => {
             this. __dispatch('imagechanged', {file:this.files[0], base64: code});
           });
